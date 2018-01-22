@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+   	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+   	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   	<script src="marked-alpha.js"></script>
+</head>
+<body>
+<div id = "a1">
+# 123123
+<div><span>这道题的答案是</span>~120-233~</div>
+</div>
+<div id = "a2"></div>
+<script type="text/javascript">
+	window.onload = function(){
+		console.log($('#a1').html())
+		$('#a2').html(marked($('#a1').html()))
+	}
+</script>
+</body>
+</html>

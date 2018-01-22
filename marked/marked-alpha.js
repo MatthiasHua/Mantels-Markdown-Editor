@@ -775,7 +775,7 @@ function Renderer(options) {
 
 Renderer.prototype.inputlabel = function (inputlabel) {
     return '<input style="width:' + (inputlabel.split('-')[0] || '100' ) 
-        + 'px" type="text" class="form-inline question-input" placeholder=" ' 
+        + 'px" type="text" class="form-inline question-input inputlabel" placeholder=" ' 
         + (inputlabel.split('-')[1] || '' ) + ' " />';
 };
 
